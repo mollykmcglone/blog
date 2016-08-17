@@ -2,6 +2,14 @@
 <h3> by {{model.author}} on {{model.date}}</h3>
 <p><img src={{model.image}} alt={{model.title}} ></p>
 
+{{post-detail post=model destroyPost="destroyPost"}}
 {{update-post post=model update="update"}}
 
-{{post-detail post=model destroyPost="destroyPost"}}
+<h3>Comments about {{model.title}}</h3>
+<ul>
+  {{#each model.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+
+{{new-comment save2="save3" post=model}}
