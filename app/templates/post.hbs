@@ -2,4 +2,6 @@
 <h3> by {{model.author}} on {{model.date}}</h3>
 <p><img src={{model.image}} alt={{model.title}} ></p>
 
+{{update-post post=model update="update"}}
+
 {{post-detail post=model destroyPost="destroyPost"}}
