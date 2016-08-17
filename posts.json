@@ -1,0 +1,20 @@
+{ "posts": [{
+    "title": "dog post",
+    "author": "San Francisco",
+    "body": "If you’re a dog parent, you know what it’s like trying to make your home look amazing while having to deal with the many accessories that come with having a dog. Between toys, leashes, and dog beds, it’s definitely not easy! For most things, a basket can hide away clutter whenever a guest drops by, but dog beds are harder to conceal.",
+    "date": "2016-08-17",
+    "image": "http://pimm.barkpost.com/wp-content/uploads/2016/08/bed_css_dog_decor.jpg?q=70&fit=crop&crop=entropy&w=808&h=500"
+  }, {
+    "title": "food post",
+    "author": "San",
+    "body": "James Beard Award-winning and self-made chef Naomi Pomeroy’s debut cookbook, featuring nearly 140 lesson-driven recipes designed to improve the home cook’s understanding of professional techniques and flavor combinations in order to produce simple, but show-stopping meals.",
+    "date": "2013-08-11",
+    "image": "http://portlandfoodanddrink.com/wp-content/uploads/2011/03/Naomi-337x450.jpg"
+  }, {
+    "title": "sports post",
+    "author": "San Frank",
+    "body": "Rio 2016 chief spokesman Mario Andrada said: As citizens of Brazil and as sports fans, we don't think booing is the right attitude, even when you are in a one-to-one competition and a young Brazilian has the chance to beat the world champion.",
+    "date": "2016-01-11",
+    "image": "http://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/3107/production/_90815521_lavllenie_nowwordstweet.jpg"
+  }]
+}

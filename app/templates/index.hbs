@@ -4,11 +4,7 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model as |post|}}
-     <li>
-       <h1>{{post.title}}</h1>
-        by {{post.author}} {{post.date}}
-        <p><img src={{post.image}} alt={{post.title}} ></p>
-      </li>
+    {{post-tile post=post}}
   {{/each}}
 </ul>
 
