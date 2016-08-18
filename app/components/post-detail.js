@@ -11,5 +11,6 @@ export default Ember.Component.extend({
       comment.destroyRecord();
       this.transitionTo('post');
     }
+
   }
 });

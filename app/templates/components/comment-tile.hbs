@@ -4,5 +4,6 @@
     <p> Date: {{comment.date}}</p>
     <p>  {{comment.text}}</p>
     <button class="btn btn-danger" {{action 'delete' comment}}>Delete this Comment</button>
+    {{update-comment comment=comment update="update"}}
   </div>
 </li>
