@@ -9,7 +9,7 @@ Router.map(function() {
   this.route('about');
   this.route('contact');
   this.route('post', {path: '/post/:post_id'});
-  this.route('comment', {path: '/comment/:comment_id'});
+  this.route('tag', {path: '/tag/:tag_id'});
 });
 
 export default Router;
