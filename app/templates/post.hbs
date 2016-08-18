@@ -1,15 +1,16 @@
-<h1> {{model.title}}</h1>
-<h3> by {{model.author}} on {{model.date}}</h3>
-<p><img src={{model.image}} alt={{model.title}} ></p>
+<div class="row">
+  <div class="col-sm-4">
+    <h1> {{model.title}}</h1>
+    <h3> by {{model.author}}</h3>
+    <p> on {{model.date}}</p>
+    <button class="btn btn-danger" {{action 'delete' post}}>Delete this Post</button>
+    {{update-post post=model update="update"}}
+  </div>
+  <div class="col-sm-6">
+    <p><img src={{model.image}} alt={{model.title}} ></p>
+  </div>
+</div>
 
-{{post-detail post=model destroyPost="destroyPost"}}
-{{update-post post=model update="update"}}
-
-<h3>Comments about {{model.title}}</h3>
-<ul>
-  {{#each model.comments as |comment|}}
-    {{comment-tile comment=comment}}
-  {{/each}}
-</ul>
+{{post-detail post=model}}
 
 {{new-comment save2="save3" post=model}}

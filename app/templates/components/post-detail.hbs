@@ -1,3 +1,8 @@
 <p> {{post.body}} </p>
 
-<button {{action 'delete' post}}>Delete this Post</button>
+<h3>Comments about {{post.title}}</h3>
+<ul>
+  {{#each post.comments as |comment|}}
+    {{comment-tile comment=comment destroyComment="destroyComment"}}
+  {{/each}}
+</ul>

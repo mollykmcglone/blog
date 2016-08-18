@@ -1,6 +1,8 @@
 <li>
   <div class="well">
-    <p>Author: {{comment.name}} Date: {{comment.date}}</p>
+    <p>Author: {{comment.name}}</p>
+    <p> Date: {{comment.date}}</p>
     <p>  {{comment.text}}</p>
+    <button class="btn btn-danger" {{action 'delete' comment}}>Delete this Comment</button>
   </div>
 </li>
