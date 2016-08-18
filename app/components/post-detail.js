@@ -10,7 +10,9 @@ export default Ember.Component.extend({
     destroyComment(comment) {
       comment.destroyRecord();
       this.transitionTo('post');
-    }
-
+    },
+    // sortComments(comments.date){
+    //   comments.sort(function(a,b){return a<b;})
+    // }
   }
 });

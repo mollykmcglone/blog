@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     save1() {
       var params = {
         name: this.get('name'),
-        date: this.get('date'),
+        date: new Date(this.get('date')),
         text: this.get('text'),
         post: this.get('post'),
       };

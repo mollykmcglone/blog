@@ -1,0 +1,10 @@
+<h3> Recent Comments</h3>
+<!-- {{action 'sortComments' comments}} -->
+<ul>
+  {{#each comments as |comment|}}
+    <li>{{#link-to 'post' comment.post.id}}
+      "{{comment.text}}" by {{comment.name}} on {{comment.date}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>

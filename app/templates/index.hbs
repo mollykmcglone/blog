@@ -1,10 +1,19 @@
-<ul>
-  {{#each model as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
-</ul>
 
-{{new-post save2="save3"}}
+<div class="container">
+  <div class="col-sm-6">
+    <ul>
+      {{#each model.posts as |post|}}
+        {{post-tile post=post}}
+      {{/each}}
+    </ul>
 
-{{#link-to 'about'}}About{{/link-to}}
-{{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+    {{new-post save2="save3"}}
+
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
+  </div>
+
+  <div class="col-sm-6">
+    {{recent-comments comments=model.comments}}
+  </div>
+</div>

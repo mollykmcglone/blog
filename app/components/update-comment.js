@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         name: this.get('name'),
         text: this.get('text'),
-        date: this.get('date'),
+        date: new Date(this.get('date')),
       };
       this.set('updateCommentForm', false);
       this.sendAction('update', comment, params);

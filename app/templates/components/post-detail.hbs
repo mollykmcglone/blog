@@ -3,6 +3,6 @@
 <h3>Comments about {{post.title}}</h3>
 <ul>
   {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment destroyComment="destroyComment" updat="update"}}
+    {{comment-tile comment=comment destroyComment="destroyComment"}}
   {{/each}}
 </ul>
