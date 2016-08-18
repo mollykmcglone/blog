@@ -14,7 +14,7 @@ export default Ember.Route.extend({
       });
       this.transitionTo('post', params.post);
     },
-    
+
     update(post, params){
       Object.keys(params).forEach(function(key){
         if(params[key]!==undefined){
@@ -33,6 +33,15 @@ export default Ember.Route.extend({
         return post.destroyRecord();
       });
       this.transitionTo('index');
-    }
+    },
+    saveTag3(params) {
+      var newTag = this.store.createRecord('tag', params);
+      var post = params.post;
+      post.get('tags').addObject(newTag);
+      newTag.save().then(function(){
+        return post.save();
+      });
+      this.transitionTo('post', params.post);
+    },
   }
 });
