@@ -7,7 +7,7 @@ export default Ember.Route.extend({
       tags: this.store.findAll('tag'),
       comments: this.store.query('comment', {
         orderBy: 'date',
-        limitToFirst: 5
+        limitToLast: 5
       }),
   })
 },
